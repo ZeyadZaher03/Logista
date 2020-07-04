@@ -41,13 +41,13 @@
 
 <body class="map-page_container">
     <nav class="navigation">
-        <ul class="navigation_list">
+        <ul class="navigation_list navigation_first">
 
             <li class="navigation_item navigation_hamburgerBtn">
                 <div class="navigation_hamburgerBtn--item"></div>
             </li>
 
-            <li class="navigation_item">
+            <li class="navigation_item navigation_logoContainer">
                 <a href="#"
                    class="navigation_link">
                     <img class="navigation_logo"
@@ -80,23 +80,91 @@
             </li>
         </ul>
 
-        <ul class="navigation_list">
+        <ul class="navigation_list navigation_second">
 
             <li class="navigation_item">
 
                 <a href="#"
                    class="navigation_link navigation_box-rounded">
                     <div class="navigation_box--item-rounded">Create Task</div>
-                    <div class="navigation_box--item-rounded"><i class="fas fa-caret-down"></i></div>
+                    <div class="navigation_box--item-rounded createTaskBtn"><i class="fas fa-caret-down"></i></div>
                 </a>
 
             </li>
+
+            <div class="nav_popup createTaskContainer">
+                <a class="nav_popup-text"
+                   href="#">Bulk Import</a>
+            </div>
+
             <li class="navigation_item">
                 <a href="#"
-                   class="navigation_link">
+                   class="navigation_link menu_navigation_btn">
                     <i class="navigation_icon fas fa-th"></i>
                 </a>
             </li>
+
+            <div class="nav_popup menu_navigation_container">
+                <div class="menu_navigation_container-grid">
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                    <div class="menu_navigation_container-box">
+                        <img class="menu_navigation_container-img"
+                             src="https://img.icons8.com/plasticine/2x/google-logo.png"
+                             alt="blo">
+                        <p class="menu_navigation_container-par">My Chats</p>
+                    </div>
+                </div>
+            </div>
+
             <li class="navigation_item">
                 <a href="#"
                    class="navigation_icon navigation_link">
@@ -105,10 +173,33 @@
             </li>
             <li class="navigation_item">
                 <a href="#"
-                   class="navigation_icon navigation_link">
+                   class="navigation_icon navigation_link notification_btn">
                     <i class="fas fa-bell"></i>
                 </a>
             </li>
+
+            <div class="nav_popup  notification_nav_container">
+                <div class="notification_container">
+                    <h2 class="notification_container--header">Updates</h2>
+                    <ul class="notification_container--list">
+                        <a class="notification_container--item"
+                           href="#">
+                            <div class="notification_container--navigation_icon-contianer">
+                                <i class="fas fa-circle"></i>
+                            </div>
+                            <div class="notification_container--navigation_text">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi nostrum nisi
+                                </p>
+                                <span>today</span>
+                            </div>
+                        </a>
+                    </ul>
+                    <div class="notification_footer">
+                        <a href="#">More Updates</a>
+                    </div>
+                </div>
+            </div>
         </ul>
 
         <div class="hamburger_menu">
@@ -208,16 +299,70 @@
                     <i class="map_info-col__icon fas fa-search"></i>
                 </div>
                 <div class="map_info-col__subhead">
-                    <li class="map_info-col__subhead-item"><span>0</span> UNASSIGNED</li>
-                    <li class="map_info-col__subhead-item map_info-col__subhead-item--active"><span>0</span> ASSIGNED</li>
-                    <li class="map_info-col__subhead-item"><span>0</span> COMPLETED</li>
+                    <li data-taskTab="0"
+                        class="map_info-col__subhead-item map_info-col__subhead-tasks"><span>0</span> UNASSIGNED</li>
+                    <li data-taskTab="1"
+                        class="map_info-col__subhead-item map_info-col__subhead-tasks map_info-col__subhead-item--active"><span>0</span> ASSIGNED</li>
+                    <li data-taskTab="2"
+                        class="map_info-col__subhead-item map_info-col__subhead-tasks"><span>0</span> COMPLETED</li>
                 </div>
                 <div class="map_info-col__containar">
-                    <div class=" tasks__empty_message-container">
-                        <p class="tasks__empty_message">
-                            no task available for the day
-                        </p>
+
+                    <div class="map_info-col__containar-tabTask"
+                         data-taskTab="0">
+                        <div class=" tasks__empty_message-container">
+                            <p class="tasks__empty_message">
+                                no task available for the day
+                            </p>
+                        </div>
                     </div>
+
+                    <div class="map_info-col__containar-tabTask map_info-col__containar-tabTask--active"
+                         data-taskTab="1">
+                        <div class="map_info-col__item map_info-col__item-task">
+                            <div class="map_info-col__item--image_container">
+                                <div class="map_info-col__item--image">
+                                    <img src="assets/images/logos/defaul-profile-pic.png"
+                                         alt="user name">
+                                </div>
+                                <p class="map_info-col__item--image_name">Zeyad Zaher</p>
+                            </div>
+                            <div class="map_info-col__item-task--progress">
+                                <div class="map_info-col__item-points map_info-col__item-points--fill map_info-col__item-point-frist">A</div>
+                                <div class="map_info-col__item-line"></div>
+                                <div class="map_info-col__item-points map_info-col__item-points--border map_info-col__item-point-last">B</div>
+                            </div>
+
+                            <div class="map_info-col__item-task--info">
+                                <div class="map_info-col__item-task--starting">
+                                    <div class="map_info-col__item-task--time">4:20am</div>
+                                    <h4 class="map_info-col__item-task--title">Alex</h4>
+                                    <p class="map_info-col__item-task--address">Alexandria, Egypt</p>
+                                    <span class="map_info-col__item-task--status">Assigned</span>
+                                </div>
+                                <div class="map_info-col__item-task--dropoff">
+                                    <div class="map_info-col__item-task--time">8:20am</div>
+                                    <h4 class="map_info-col__item-task--title">Alex</h4>
+                                    <p class="map_info-col__item-task--address">Alexandria, Egypt</p>
+                                    <span class="map_info-col__item-task--status">Assigned</span>
+                                </div>
+                            </div>
+
+                            <div class="map_info-col__item-task--more">
+                                <i class="map_info-col__item-task--icon_more fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="map_info-col__containar-tabTask"
+                         data-taskTab="2">
+                        <div class=" tasks__empty_message-container">
+                            <p class="tasks__empty_message">
+                                no task available for the day
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -225,7 +370,7 @@
         <div class="map_container">
         </div>
 
-        <div class=" map_info-col">
+        <div class="map_info-col">
             <div class="map_info-col_collaps map_info-col_collaps--agents"><i class="map_info-col_icon--agents fas fa-chevron-right"></i></div>
             <div class="map_agents">
                 <div class="map_info-col__header">
@@ -233,27 +378,77 @@
                     <i class="map_info-col__icon fas fa-search"></i>
                 </div>
                 <div class="map_info-col__subhead">
-                    <li class="map_info-col__subhead-item"><span class="map_info-col_number--agents">0</span> FREE</li>
-                    <li class="map_info-col__subhead-item map_info-col__subhead-item--active"><span class="map_info-col_number--agents">1</span> BUSY</li>
-                    <li class="map_info-col__subhead-item"><span class="map_info-col_number--agents">0</span> INACTIVE</li>
+                    <li data-agentTab="0"
+                        class="map_info-col__subhead-item map_info-col__subhead-agents"><span class="map_info-col_number--agents">0</span> FREE</li>
+                    <li data-agentTab="1"
+                        class="map_info-col__subhead-item map_info-col__subhead-agents map_info-col__subhead-item--active"><span class="map_info-col_number--agents">1</span> BUSY</li>
+                    <li data-agentTab="2"
+                        class="map_info-col__subhead-item map_info-col__subhead-agents"><span class="map_info-col_number--agents">0</span> INACTIVE</li>
                 </div>
                 <div class="map_info-col__containar">
-                    <div class="map_info-col__item">
-                        <div class="map_info-col__item--image">
-                            <img src="assets/images/logos/defaul-profile-pic.png"
-                                 alt="user name">
-                        </div>
-                        <div class="map_info-col__item--info">
-                            <h3 class="map_info-col__item--name">Zeyad Mohamed</h3>
-                            <p class="map_info-col__item--number"><span class="map_info-col__item--number_nation">+20</span> 01280919630</p>
-                        </div>
-                        <div class="map_info-col__item--assign">
-                            <div class="map_info-col__item--tasksNumber">
-                                <span class="map_info-col__item--tasks_circle">0</span>
-                                <p class="map_info-col__item--task-p">Task</p>
+                    <div data-agentTab="0"
+                         class="map_info-col__containar-tabAgnet">
+                        <div class="map_info-col__item">
+                            <div class="map_info-col__item--image">
+                                <img src="assets/images/logos/defaul-profile-pic.png"
+                                     alt="user name">
                             </div>
-                            <div class="map_info-col__item--moreInfoBtn">
-                                <i class="fas fa-angle-right"></i>
+                            <div class="map_info-col__item--info">
+                                <h3 class="map_info-col__item--name">Ahmed Mohamed</h3>
+                                <p class="map_info-col__item--number"><span class="map_info-col__item--number_nation">+20</span> 01280919630</p>
+                            </div>
+                            <div class="map_info-col__item--assign">
+                                <div class="map_info-col__item--tasksNumber">
+                                    <span class="map_info-col__item--tasks_circle">0</span>
+                                    <p class="map_info-col__item--task-p">Task</p>
+                                </div>
+                                <div class="map_info-col__item--moreInfoBtn">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-agentTab="1"
+                         class="map_info-col__containar-tabAgnet map_info-col__containar-tabAgnet--active">
+                        <div class="map_info-col__item">
+                            <div class="map_info-col__item--image">
+                                <img src="assets/images/logos/defaul-profile-pic.png"
+                                     alt="user name">
+                            </div>
+                            <div class="map_info-col__item--info">
+                                <h3 class="map_info-col__item--name">Salah Mohamed</h3>
+                                <p class="map_info-col__item--number"><span class="map_info-col__item--number_nation">+20</span> 01280919630</p>
+                            </div>
+                            <div class="map_info-col__item--assign">
+                                <div class="map_info-col__item--tasksNumber">
+                                    <span class="map_info-col__item--tasks_circle">0</span>
+                                    <p class="map_info-col__item--task-p">Task</p>
+                                </div>
+                                <div class="map_info-col__item--moreInfoBtn">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-agentTab="2"
+                         class="map_info-col__containar-tabAgnet map_info-col__containar-tabAgent--active">
+                        <div class="map_info-col__item">
+                            <div class="map_info-col__item--image">
+                                <img src="assets/images/logos/defaul-profile-pic.png"
+                                     alt="user name">
+                            </div>
+                            <div class="map_info-col__item--info">
+                                <h3 class="map_info-col__item--name">Zeyad Mohamed</h3>
+                                <p class="map_info-col__item--number"><span class="map_info-col__item--number_nation">+20</span> 01280919630</p>
+                            </div>
+                            <div class="map_info-col__item--assign">
+                                <div class="map_info-col__item--tasksNumber">
+                                    <span class="map_info-col__item--tasks_circle">0</span>
+                                    <p class="map_info-col__item--task-p">Task</p>
+                                </div>
+                                <div class="map_info-col__item--moreInfoBtn">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
