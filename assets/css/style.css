@@ -414,6 +414,7 @@ p {
 .map_info-col__item-task {
 	align-items: center;
 	justify-content: start !important;
+	position: relative;
 }
 
 .map_info-col__item-task--progress {
@@ -538,10 +539,51 @@ p {
 .map_info-col__item--image {
 	width: 4rem;
 	border: 1px solid #eee;
+	position: relative;
 	height: 4rem;
 	border-radius: 50%;
-	overflow: hidden;
+
 }
+
+.agent_activity {
+	position: absolute;
+	right: 0px;
+	border-radius: 50%;
+	bottom: 0;
+	display: block;
+	width: 10px;
+	height: 10px;
+}
+
+.agent_activity--online {
+	background-color: #51d371;
+}
+
+.agent_activity--offduty {
+	background-color: #b0b8b2;
+}
+
+.agent_activity--busy {
+	background-color: #f0db65;
+}
+
+.notification_btn {
+	position: relative;
+}
+
+.notification_number {
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	position: absolute;
+	padding-top: 2px;
+	top: -5px;
+	right: -5px;
+	background-color: #e7402d;
+	font-size: 1rem;
+	text-align: center;
+}
+
 
 .map_info-col__item--info {
 	display: flex;
@@ -560,6 +602,23 @@ p {
 
 .map_info-col__item--image img {
 	width: 100%;
+	border-radius: 50%;
+	border: 1px solid #eee;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.map_info-col__item--assigning {
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 2rem;
+	font-size: 1.4rem;
+	background-color: salmon;
+	color: #fff;
+	padding: .5rem 1rem;
+	border-radius: 5px;
+	line-height: 1;
+	cursor: pointer;
 }
 
 .map_info-col__item--moreInfoBtn {
