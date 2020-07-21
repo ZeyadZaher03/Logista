@@ -869,3 +869,340 @@ p {
 		padding: 5px;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* login */
+
+.btnnav {
+	margin: 2rem;
+	padding: 1rem 5rem;
+	border-radius: 2rem;
+	background-color: #ececec;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnnav button {
+	padding: 1rem;
+	background-color: #818181;
+	padding: 1rem 2rem;
+	border: 0;
+	border-radius: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.signup {
+	display: none;
+	position: absolute;
+	left: 50%;
+	width: 50rem;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f9f9;
+	padding: 2rem 3rem;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+
+.signup h2 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.signup button {
+	font-size: 1.5rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+	text-align: center;
+	display: inline-block;
+	border: 0;
+	border-radius: 20px;
+	padding: 1rem 2rem;
+}
+
+
+.signup .item {
+	display: flex;
+	flex-direction: column;
+}
+
+.signup .item label {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.signup .item input {
+	margin-bottom: 1rem;
+}
+
+
+
+.btnnav {
+	margin: 2rem;
+	padding: 1rem 5rem;
+	border-radius: 2rem;
+	background-color: #ececec;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btnnav button {
+	padding: 1rem;
+	background-color: #818181;
+	padding: 1rem 2rem;
+	border: 0;
+	border-radius: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.login {
+	display: none;
+	position: absolute;
+	left: 50%;
+	width: 50rem;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #f9f9f9;
+	padding: 2rem 3rem;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}
+
+.login h2 {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.login button {
+	font-size: 1.5rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+	text-align: center;
+	display: inline-block;
+	border: 0;
+	border-radius: 20px;
+	padding: 1rem 2rem;
+}
+
+
+.login .item {
+	display: flex;
+	flex-direction: column;
+}
+
+.login .item label {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.login .item input {
+	margin-bottom: 1rem;
+}
+
+
+/* registration page */
+
+.float_logo {
+	padding: 1rem 3rem;
+	border-radius: 10px;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+	background-color: #000;
+}
+
+.registration_container {
+	width: 40rem;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	border: 1px solid #eee;
+}
+
+.registration_heading {
+	display: flex;
+}
+
+.registration_link {
+	flex: 1;
+	padding: 2rem;
+	background-color: #000;
+	color: #ddd !important;
+	font-size: 2rem;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+}
+
+.registration_link:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 60%;
+	background: rgba(255, 255, 255, 0.363);
+}
+
+.registration_link--active {
+	background-color: #000;
+	color: #fff !important;
+}
+
+.registration_tab {
+	padding: 2rem;
+	display: none;
+}
+
+.registration_tab--active {
+	display: block;
+}
+
+.reg-input_container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.reg-input_container input {
+	border: 1px solid #ccc;
+	padding: .5rem 1rem;
+	border-radius: 5px;
+}
+
+.reg_link {
+	font-size: 1.5rem;
+	background-color: transparent;
+	padding: 0;
+	text-align: start;
+	color: #080808 !important;
+	text-decoration: underline;
+	margin: 5px 0;
+}
+
+.reg_btnContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reg_btn {
+	background-color: #080808;
+	border: 0;
+	padding: 1rem 3rem;
+	color: #fff;
+	border-radius: 20px;
+}
+
+
+.addTaskContainer {
+	right: 20%;
+	z-index: 9999999999;
+}
+
+.addTask {
+	padding: 1.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.addTaskInputContainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.addTaskInputContainer label {
+	color: #000;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+.addTaskInputContainer input {
+	color: #000;
+	padding: .3rem 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.addTaskBtnContainer {
+	display: flex;
+	width: 100%;
+	margin-top: 1rem;
+	justify-content: center;
+}
+
+.addTaskBtnContainer button {
+	background-color: #000;
+	border: 0;
+	color: #fff;
+	border-radius: 20px;
+	padding: .5rem 1rem;
+}
+
+
+.addDriverContainer {
+	right: 11%;
+	z-index: 9999999999;
+}
+
+.addDriver {
+	padding: 1.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.addDriverInputContainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+
+.addDriverInputContainer label {
+	color: #000;
+	font-size: 1.4rem;
+	text-transform: capitalize;
+}
+
+.addDriverInputContainer input {
+	color: #000;
+	padding: .3rem 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.addDriverBtnContainer {
+	display: flex;
+	width: 100%;
+	margin-top: 1rem;
+	justify-content: center;
+}
+
+.addDriverBtnContainer button {
+	background-color: #000;
+	border: 0;
+	color: #fff;
+	border-radius: 20px;
+	padding: .5rem 1rem;
+}
